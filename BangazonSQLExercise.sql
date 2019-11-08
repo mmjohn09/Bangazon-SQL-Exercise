@@ -14,5 +14,11 @@
 
 --UPDATE Department SET Budget = (Budget * 1.20);
 
---List the employee full names for employees who are not signed up for any training programs.
-SELECT * FROM TrainingProgram;
+--SELECT e.Id, e.FirstName, e.LastName FROM Employee e WHERE e.Id NOT IN (SELECT EmployeeId FROM EmployeeTraining);
+
+--List the employee full names for employees who are signed up for at least one training program
+--and include the number of training programs they are signed up for.
+
+ --SELECT e.FirstName, e.LastName, COUNT(et.EmployeeId) AS NumberOfTrainingPrograms FROM Employee e
+ --JOIN EmployeeTraining et ON et.EmployeeId = e.Id
+ --GROUP BY et.EmployeeId, e.FirstName, e.LastName;
