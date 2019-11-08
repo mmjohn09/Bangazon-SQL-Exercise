@@ -27,4 +27,9 @@
  --JOIN EmployeeTraining et ON et.TrainingProgramId = tp.Id
  --GROUP BY tp.Name, tp.StartDate, tp.EndDate, tp.MaxAttendees;
 
+ --SELECT tp.Name AS ProgramName FROM TrainingProgram tp
+ --JOIN EmployeeTraining et ON et.TrainingProgramId = tp.Id
+ --GROUP BY tp.MaxAttendees, tp.Name
+ --HAVING tp.MaxAttendees = COUNT(et.EmployeeId);
+
  
