@@ -22,3 +22,9 @@
  --SELECT e.FirstName, e.LastName, COUNT(et.EmployeeId) AS NumberOfTrainingPrograms FROM Employee e
  --JOIN EmployeeTraining et ON et.EmployeeId = e.Id
  --GROUP BY et.EmployeeId, e.FirstName, e.LastName;
+
+ --SELECT tp.Name AS ProgramName, tp.StartDate, tp.EndDate, tp.MaxAttendees, COUNT(et.EmployeeId) AS NumberOfAttendees FROM TrainingProgram tp
+ --JOIN EmployeeTraining et ON et.TrainingProgramId = tp.Id
+ --GROUP BY tp.Name, tp.StartDate, tp.EndDate, tp.MaxAttendees;
+
+ 
