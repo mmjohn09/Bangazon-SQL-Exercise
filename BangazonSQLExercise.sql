@@ -56,6 +56,14 @@
 --LEFT JOIN ComputerEmployee ce ON ce.EmployeeId = e.Id
 --WHERE ce.ComputerId IS NULL;
 
+SELECT e.FirstName, e.LastName, ISNULL(c.Manufacturer + ' ' + c.Make, 'N/A') AS Computer_Info
+FROM Employee e
+LEFT JOIN ComputerEmployee ce ON ce.EmployeeId = e.Id AND ce.UnassignDate IS NULL
+LEFT JOIN Computer c ON ce.ComputerId = c.Id;
+
+
+
+
 
 
  
