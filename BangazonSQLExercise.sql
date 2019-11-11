@@ -47,4 +47,13 @@
 --GROUP BY et.TrainingProgramId, t.Name, t.StartDate, t.EndDate
 --ORDER BY COUNT(et.TrainingProgramId) DESC
 
+--SELECT TOP 3 t.Name AS MOST_POPULAR FROM EmployeeTraining et
+--JOIN TrainingProgram t ON et.TrainingProgramId = t.Id
+--GROUP BY t.Name
+--ORDER BY Count(t.Name) DESC
+
+
+
+
+
  
