@@ -52,7 +52,9 @@
 --GROUP BY t.Name
 --ORDER BY Count(t.Name) DESC
 
-
+--SELECT e.FirstName, e.LastName, ce.ComputerId FROM Employee e
+--LEFT JOIN ComputerEmployee ce ON ce.EmployeeId = e.Id
+--WHERE ce.ComputerId IS NULL;
 
 
 
