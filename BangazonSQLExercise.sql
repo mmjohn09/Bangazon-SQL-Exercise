@@ -32,7 +32,19 @@
  --GROUP BY tp.MaxAttendees, tp.Name
  --HAVING tp.MaxAttendees = COUNT(et.EmployeeId);
 
- SELECT * FROM TrainingProgram
- WHERE EndDate > SYSDATETIME();
+ --SELECT * FROM TrainingProgram
+ --WHERE EndDate > SYSDATETIME();
+
+ --INSERT INTO EmployeeTraining (EmployeeId, TrainingProgramId) VALUES (14, 10);
+ --INSERT INTO EmployeeTraining (EmployeeId, TrainingProgramId) VALUES (15, 11);
+ --INSERT INTO EmployeeTraining (EmployeeId, TrainingProgramId) VALUES (16, 12);
+ --INSERT INTO EmployeeTraining (EmployeeId, TrainingProgramId) VALUES (17, 13);
+ --INSERT INTO EmployeeTraining (EmployeeId, TrainingProgramId) VALUES (18, 14);
+
+--SELECT TOP 3 t.Name AS MOST_POPULAR, COUNT(et.TrainingProgramId) AS NUM_OF_ATTENDEES, t.StartDate, t.EndDate
+--FROM EmployeeTraining et
+--JOIN TrainingProgram t ON et.TrainingProgramId = t.Id
+--GROUP BY et.TrainingProgramId, t.Name, t.StartDate, t.EndDate
+--ORDER BY COUNT(et.TrainingProgramId) DESC
 
  
