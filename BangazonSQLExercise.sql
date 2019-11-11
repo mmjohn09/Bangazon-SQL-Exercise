@@ -32,4 +32,7 @@
  --GROUP BY tp.MaxAttendees, tp.Name
  --HAVING tp.MaxAttendees = COUNT(et.EmployeeId);
 
+ SELECT * FROM TrainingProgram
+ WHERE EndDate > SYSDATETIME();
+
  
